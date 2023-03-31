@@ -1,12 +1,24 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+  { "christoomey/vim-tmux-navigator" },
+  { "mtdl9/vim-log-highlighting", ft = "log" },
+  {
+    "phaazon/hop.nvim",
+    event = "BufRead",
+    config = function()
+      require("hop").setup()
+      vim.api.nvim_set_keymap("n", "s", ":HopChar2<cr>", { silent = true })
+      vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
+    end,
+  },
+  {
+    "windwp/nvim-spectre",
+    event = "BufRead",
+    config = function() require("spectre").setup() end,
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    build = "cd app && npm install",
+    ft = "markdown",
+    config = function() end,
+  },
 }

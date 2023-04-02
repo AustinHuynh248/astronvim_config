@@ -1,8 +1,5 @@
 return {
   "mfussenegger/nvim-dap",
-  dependencies = {
-    { "theHamsta/nvim-dap-virtual-text", config = true },
-  },
   config = function()
     local dap = require "dap"
 

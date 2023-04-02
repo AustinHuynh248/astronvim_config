@@ -35,6 +35,8 @@ return {
       desc = "Replace visually selected word",
     },
     ["<leader>Rf"] = { "<cmd>lua require('spectre').open_file_search()<cr>", desc = "Replace word in current buffer" },
+    -- add find key
+    ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find project" },
   },
   t = {
     -- setting a mapping to false will disable it

@@ -21,4 +21,17 @@ return {
     ft = "markdown",
     config = function() end,
   },
+  {
+    "danymat/neogen",
+    cmd = "Neogen",
+    opts = {
+      snippet_engine = "luasnip",
+      languages = {
+        lua = { template = { annotation_convention = "ldoc" } },
+        javacript = { template = { annotation_convention = "jsdoc" } },
+        typescript = { template = { annotation_convention = "jsdoc" } },
+        typescriptreact = { template = { annotation_convention = "tsdoc" } },
+      },
+    },
+  },
 }

@@ -7,6 +7,8 @@ return {
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
+    ["<S-l>"] = { "<cmd>bn<cr>", desc = "next buffer" },
+    ["<S-h>"] = { "<cmd>bp<cr>", desc = "prev buffer" },
     -- mappings seen under group name "Buffer"
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {

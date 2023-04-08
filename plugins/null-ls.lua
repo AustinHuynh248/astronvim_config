@@ -10,8 +10,9 @@ return {
     config.sources = {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,
-      -- null_ls.builtins.formatting.prettier,
-      null_ls.builtins.formatting.eslint_d,
+      null_ls.builtins.formatting.eslint_d.with {
+        filetypes = { "javascriptreact", "typescript", "typescriptreact", "vue" },
+      },
       require "typescript.extensions.null-ls.code-actions",
     }
     return config -- return final config table

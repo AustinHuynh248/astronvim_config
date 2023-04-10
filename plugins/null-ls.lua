@@ -10,8 +10,28 @@ return {
     config.sources = {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,
+      null_ls.builtins.formatting.prettierd.with {
+        filetypes = {
+          "typescriptreact",
+          "handlebars",
+          "graphql",
+          "less ",
+          "markdown.mdx",
+          "vue",
+          "scss",
+          " json",
+          "jsonc",
+          "yaml",
+          "css",
+          "html ",
+          "markdown ",
+          "javascriptreact",
+          "javascriptreact",
+          "vue",
+        },
+      },
       null_ls.builtins.formatting.eslint_d.with {
-        filetypes = { "javascriptreact", "typescript", "typescriptreact", "vue" },
+        filetypes = { "javascriptreact", "typescript", "javascript", "typescriptreact", "vue" },
       },
       require "typescript.extensions.null-ls.code-actions",
     }

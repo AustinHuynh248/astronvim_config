@@ -1,11 +1,13 @@
 return {
   "nvim-telescope/telescope.nvim",
   dependencies = {
-    "ahmedkhalf/project.nvim", -- defined in  ./editor.lua
+    "sopa0/telescope-makefile",
+    "ahmedkhalf/project.nvim",
   },
   config = function(...)
-    require "plugins.configs.telescope" (...)
+    require "plugins.configs.telescope"(...)
     local telescope = require "telescope"
+    telescope.load_extension "make"
     telescope.load_extension "projects"
   end,
 }

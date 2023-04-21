@@ -48,6 +48,7 @@ return {
     },
     ["<leader>Rf"] = { "<cmd>lua require('spectre').open_file_search()<cr>", desc = "Replace word in current buffer" },
     -- add telescope key
+    ["<leader>fe"] = { "<cmd>Telescope file_browser<cr>", desc = "File explorer" },
     ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find project" },
     ["<leader>fM"] = { "<cmd>Telescope make<cr>", desc = "Make targets" },
   },

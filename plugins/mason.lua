@@ -6,6 +6,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "tsserver",
+        "bashls",
         "marksman",
         "html",
         "jsonls",
@@ -19,6 +20,7 @@ return {
     "jay-babu/mason-null-ls.nvim",
     opts = {
       ensure_installed = {
+        "beautysh",
         "shellcheck",
         "stylua",
         "black",

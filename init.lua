@@ -37,21 +37,11 @@ return {
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
-        -- "sumneko_lua",
+        "tsserver",
+        "lua_ls",
       },
       timeout_ms = 3200, -- default format timeout
-      filter = function(client)
-        -- disable formatting for lua_ls
-        if client.name == "lua_ls" then return false end
-
-        -- only enable null-ls for javascript files
-        if vim.bo.filetype == "javascript" then return client.name == "null-ls" end
-
-        -- only enable null-ls for typescript files
-        if vim.bo.filetype == "typescript" then return client.name == "null-ls" end
-        -- enable all other clients
-        return true
-      end,
+      filter = function(client) return true end,
     },
     -- enable servers that you already have installed without mason
     servers = {

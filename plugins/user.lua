@@ -1,6 +1,6 @@
 return {
   { "christoomey/vim-tmux-navigator" },
-  { "mtdl9/vim-log-highlighting",    ft = "log" },
+  { "mtdl9/vim-log-highlighting", ft = "log" },
   {
     "phaazon/hop.nvim",
     event = "BufRead",
@@ -19,8 +19,7 @@ return {
     "iamcco/markdown-preview.nvim",
     build = "cd app && npm install",
     ft = "markdown",
-    config = function()
-    end,
+    config = function() end,
   },
   {
     "lukas-reineke/headlines.nvim",

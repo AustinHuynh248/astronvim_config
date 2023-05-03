@@ -45,7 +45,16 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "nginx_ls",
+    },
+    config = {
+      nginx_ls = function()
+        return {
+          cmd = { "nginx-language-server" },
+          filetypes = { "nginx" },
+          root_dir = require("lspconfig.util").root_pattern "nginx.conf",
+        }
+      end,
     },
   },
   -- Configure require("lazy").setup() options

@@ -30,9 +30,6 @@ return {
           "vue",
         },
       },
-      null_ls.builtins.formatting.eslint_d.with {
-        filetypes = { "javascriptreact", "typescript", "javascript", "typescriptreact", "vue" },
-      },
       require "typescript.extensions.null-ls.code-actions",
     }
     return config -- return final config table

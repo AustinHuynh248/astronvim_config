@@ -22,12 +22,6 @@ return {
     config = function() end,
   },
   {
-    "lukas-reineke/headlines.nvim",
-    dependencies = "nvim-treesitter/nvim-treesitter",
-    ft = "markdown",
-    opts = {},
-  },
-  {
     "ahmedkhalf/project.nvim",
     event = "VeryLazy",
     opts = {
@@ -47,5 +41,15 @@ return {
         typescriptreact = { template = { annotation_convention = "tsdoc" } },
       },
     },
+  },
+  {
+    "ellisonleao/glow.nvim",
+    cmd = "Glow",
+    config = function()
+      require("glow").setup {
+        style = "dark",
+        width = 120,
+      }
+    end,
   },
 }

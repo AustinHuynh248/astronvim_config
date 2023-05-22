@@ -49,9 +49,7 @@ return {
     ["<leader>Rf"] = { "<cmd>lua require('spectre').open_file_search()<cr>", desc = "Replace word in current buffer" },
     -- add telescope key
     ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find project" },
-  },
-  t = {
-    -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    -- add glow key
+    ["<leader>G"] = { "<cmd>Glow<cr>", desc = "  Glow Preview" },
   },
 }

@@ -31,23 +31,26 @@ return {
       end,
       desc = "Pick buffer to close",
     },
-    -- tables with the `name` key will be registered with which-key if it's installed
+    -- better increment/decrement
+    ["-"] = { "<c-x>", desc = "Descrement number" },
+    ["+"] = { "<c-a>", desc = "Increment number" },
+    -- resize with arrows
+    ["<Up>"] = { function() require("smart-splits").resize_up(2) end, desc = "Resize split up" },
+    ["<Down>"] = { function() require("smart-splits").resize_down(2) end, desc = "Resize split down" },
+    ["<Left>"] = { function() require("smart-splits").resize_left(2) end, desc = "Resize split left" },
+    ["<Right>"] = { function() require("smart-splits").resize_right(2) end, desc = "Resize split right" },
     -- this is useful for naming menus
     ["<leader>b"] = { name = " Buffers" },
     ["<leader>k"] = { "i<Enter><Esc>", desc = "down a line" },
-    -- split which key
-    ["<leader>s"] = { name = "󱤗 Split" },
-    ["<leader>sh"] = { "<cmd>split<cr>", desc = "split horizontal" },
-    ["<leader>sv"] = { "<cmd>vsplit<cr>", desc = "split vertical" },
     -- replace which key
-    ["<leader>R"] = { name = " Replace" },
-    ["<leader>Rp"] = { "<cmd>lua require('spectre').open()<cr>", desc = "Replace word in project" },
-    ["<leader>Rw"] = {
-      "<cmd>lua require('spectre').open_visual({selected_word=true})<cr>",
-      desc = "Replace visually selected word",
+    ["<leader>s"] = { desc = "󰛔 Search/Replace" },
+    ["<leader>ss"] = { function() require("spectre").open() end, desc = "Spectre" },
+    ["<leader>sf"] = { function() require("spectre").open_file_search() end, desc = "Spectre (current file)" },
+    ["<leader>sw"] = {
+      function() require("spectre").open_visual { select_word = true } end,
+      desc = "Spectre (current word)",
     },
-    ["<leader>Rf"] = { "<cmd>lua require('spectre').open_file_search()<cr>", desc = "Replace word in current buffer" },
-    -- add telescope key
+    -- telescope
     ["<leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find project" },
     ["<leader>fT"] = { "<cmd>TodoTelescope<cr>", desc = "Find TODOs" },
     -- glow

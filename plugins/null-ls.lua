@@ -11,23 +11,12 @@ return {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,
       null_ls.builtins.formatting.prettierd.with {
-        filetypes = {
+        disabled_filetypes = {
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescript.tsx",
           "typescriptreact",
-          "handlebars",
-          "graphql",
-          "less ",
-          "markdown.mdx",
-          "vue",
-          "scss",
-          " json",
-          "jsonc",
-          "yaml",
-          "css",
-          "html",
-          "markdown",
-          "javascriptreact",
-          "javascriptreact",
-          "vue",
         },
       },
       require "typescript.extensions.null-ls.code-actions",

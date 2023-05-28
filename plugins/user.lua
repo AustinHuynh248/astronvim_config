@@ -1,4 +1,10 @@
 return {
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   { "christoomey/vim-tmux-navigator" },
   { "mtdl9/vim-log-highlighting", ft = "log" },
   {

@@ -5,17 +5,23 @@ return {
     priority = 1000,
     opts = {},
   },
-  { "christoomey/vim-tmux-navigator" },
-  { "mtdl9/vim-log-highlighting", ft = "log" },
   {
-    "phaazon/hop.nvim",
-    event = "BufRead",
+    "echasnovski/mini.nvim",
+    event = "BufEnter",
     config = function()
-      require("hop").setup()
-      vim.api.nvim_set_keymap("n", "s", ":HopChar2<cr>", { silent = true })
-      vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
+      local timing = { timing = require("mini.animate").gen_timing.linear { duration = 67, unit = "total" } }
+      require("mini.animate").setup {
+        cursor = { timing = require("mini.animate").gen_timing.linear { duration = 125, unit = "total" } },
+        scroll = timing,
+        resize = timing,
+        open = timing,
+        close = timing,
+      }
+      require("mini.animate").setup()
     end,
   },
+  { "christoomey/vim-tmux-navigator" },
+  { "mtdl9/vim-log-highlighting", ft = "log" },
   {
     "windwp/nvim-spectre",
     event = "BufRead",

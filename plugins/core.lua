@@ -27,4 +27,23 @@ return {
   { "akinsho/toggleterm.nvim", opts = {
     terminal_mappings = false,
   } },
+  {
+    "lewis6991/gitsigns.nvim",
+    opts = {
+      signcolumn = false,
+      numhl = true,
+      current_line_blame_opts = { ignore_whitespace = true },
+    },
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        hijack_netrw_behavior = "open_default",
+        filtered_items = {
+          always_show = { ".github", ".gitignore" },
+        },
+      },
+    },
+  },
 }

@@ -41,7 +41,7 @@ return {
       filesystem = {
         hijack_netrw_behavior = "open_default",
         filtered_items = {
-          always_show = { ".github", ".gitignore" },
+          always_show = { ".github", ".gitignore", ".env.*" },
         },
       },
     },

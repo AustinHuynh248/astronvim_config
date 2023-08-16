@@ -10,7 +10,6 @@ return {
     list = true, -- show whitespace characters
     listchars = { tab = "│→", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣" },
     showbreak = "↪ ",
-    showtabline = (vim.t.bufs and #vim.t.bufs > 1) and 2 or 1,
     splitkeep = "screen",
     swapfile = false,
     wrap = true, -- soft wrap lines

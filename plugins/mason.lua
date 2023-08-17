@@ -28,7 +28,6 @@ return {
         "isort",
         "prettierd",
         "stylua",
-        "eslint_d",
       },
     },
   },

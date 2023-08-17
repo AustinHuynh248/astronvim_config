@@ -14,6 +14,7 @@ return {
         "yamlls",
         "pyright",
         "eslint",
+        "gopls",
       },
     },
   },

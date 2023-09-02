@@ -28,12 +28,12 @@ return {
     terminal_mappings = false,
   } },
   {
+    "sindrets/diffview.nvim",
+    event = "User AstroGitFile",
+    cmd = { "DiffviewOpen" },
+  },
+  {
     "lewis6991/gitsigns.nvim",
-    opts = {
-      signcolumn = false,
-      numhl = true,
-      current_line_blame_opts = { ignore_whitespace = true },
-    },
   },
   {
     "nvim-neo-tree/neo-tree.nvim",

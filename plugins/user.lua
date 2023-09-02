@@ -40,7 +40,7 @@ return {
       languages = {
         lua = { template = { annotation_convention = "ldoc" } },
         javacript = { template = { annotation_convention = "jsdoc" } },
-        typescript = { template = { annotation_convention = "jsdoc" } },
+        typescript = { template = { annotation_convention = "tsdoc" } },
         typescriptreact = { template = { annotation_convention = "tsdoc" } },
       },
     },

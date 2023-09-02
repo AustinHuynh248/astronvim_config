@@ -14,7 +14,6 @@ return {
         disabled_filetypes = {
           "javascript",
           "javascriptreact",
-          "typescript",
           "typescript.tsx",
           "typescriptreact",
         },

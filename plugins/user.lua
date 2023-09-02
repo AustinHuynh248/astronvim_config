@@ -35,15 +35,8 @@ return {
   {
     "danymat/neogen",
     cmd = "Neogen",
-    opts = {
-      snippet_engine = "luasnip",
-      languages = {
-        lua = { template = { annotation_convention = "ldoc" } },
-        javacript = { template = { annotation_convention = "jsdoc" } },
-        typescript = { template = { annotation_convention = "tsdoc" } },
-        typescriptreact = { template = { annotation_convention = "tsdoc" } },
-      },
-    },
+    dependencies = "nvim-treesitter/nvim-treesitter",
+    config = true,
   },
   {
     "folke/todo-comments.nvim",

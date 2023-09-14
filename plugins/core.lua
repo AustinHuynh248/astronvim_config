@@ -19,9 +19,6 @@ return {
     cmd = { "DiffviewOpen" },
   },
   {
-    "lewis6991/gitsigns.nvim",
-  },
-  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       filesystem = {

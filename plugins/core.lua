@@ -1,7 +1,4 @@
-local get_icon = require("astronvim.utils").get_icon
-
 return {
-  -- customize alpha options
   {
     "goolord/alpha-nvim",
     enabled = false,
@@ -17,6 +14,12 @@ return {
     "sindrets/diffview.nvim",
     event = "User AstroGitFile",
     cmd = { "DiffviewOpen" },
+  },
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      background_colour = "#4C566A",
+    },
   },
   {
     "nvim-neo-tree/neo-tree.nvim",

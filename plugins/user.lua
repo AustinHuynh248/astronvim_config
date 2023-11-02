@@ -9,7 +9,11 @@ return {
     "rmehri01/onenord.nvim",
     lazy = false,
     priority = 1000,
-    opts = {},
+    opts = {
+      disable = {
+        background = true, -- Disable setting the background color
+      },
+    },
   },
   { "christoomey/vim-tmux-navigator" },
   { "mtdl9/vim-log-highlighting", ft = "log" },

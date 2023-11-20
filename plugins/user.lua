@@ -16,7 +16,6 @@ return {
     },
   },
   { "christoomey/vim-tmux-navigator" },
-  { "mtdl9/vim-log-highlighting", ft = "log" },
   {
     "windwp/nvim-spectre",
     event = "BufRead",
@@ -58,16 +57,6 @@ return {
         cancel = "<c-e>",
       },
     },
-  },
-  {
-    "ellisonleao/glow.nvim",
-    cmd = "Glow",
-    config = function()
-      require("glow").setup {
-        style = "dark",
-        width = 120,
-      }
-    end,
   },
   {
     "kylechui/nvim-surround",

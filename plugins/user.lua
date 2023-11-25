@@ -3,17 +3,14 @@ return {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    opts = {},
+    opts = {
+      transparent = true,
+    },
   },
   {
     "rmehri01/onenord.nvim",
     lazy = false,
     priority = 1000,
-    opts = {
-      disable = {
-        background = true, -- Disable setting the background color
-      },
-    },
   },
   { "christoomey/vim-tmux-navigator" },
   {

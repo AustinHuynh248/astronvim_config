@@ -33,7 +33,7 @@ return {
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
+          "json",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
@@ -53,6 +53,18 @@ return {
           cmd = { "nginx-language-server" },
           filetypes = { "nginx" },
           root_dir = require("lspconfig.util").root_pattern "nginx.conf",
+        }
+      end,
+      tailwindcss = function()
+        return {
+          filetypes = {
+            "html",
+            "mdx",
+            "css",
+            "postcss",
+            "javascriptreact",
+            "typescriptreact",
+          },
         }
       end,
     },

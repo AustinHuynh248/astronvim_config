@@ -27,8 +27,18 @@ return {
       filesystem = {
         hijack_netrw_behavior = "open_default",
         filtered_items = {
-          always_show = { ".github", ".gitignore", ".env", ".env.development.local_preconfig", ".config" },
+          always_show = { ".gitignore", ".env", ".env.development.local_preconfig", ".config" },
         },
+      },
+    },
+  },
+  {
+    "NvChad/nvim-colorizer.lua",
+    lazy = false,
+    opts = {
+      user_default_options = {
+        names = true,
+        tailwind = true, -- Enable tailwind colors
       },
     },
   },

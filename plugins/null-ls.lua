@@ -13,6 +13,7 @@ return {
       null_ls.builtins.formatting.prettierd.with {
         disabled_filetypes = {
           "javascript",
+          "typescript",
         },
       },
       require "typescript.extensions.null-ls.code-actions",

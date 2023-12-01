@@ -17,9 +17,6 @@ return {
   },
   {
     "rcarriga/nvim-notify",
-    opts = {
-      background_colour = "#4C566A",
-    },
   },
   {
     "nvim-neo-tree/neo-tree.nvim",

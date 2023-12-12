@@ -33,12 +33,6 @@ return {
     config = function(_, opts) require("project_nvim").setup(opts) end,
   },
   {
-    "danymat/neogen",
-    cmd = "Neogen",
-    dependencies = "nvim-treesitter/nvim-treesitter",
-    config = true,
-  },
-  {
     "folke/todo-comments.nvim",
     event = "User AstroFile",
     cmd = { "TodoTrouble", "TodoTelescope", "TodoLocList", "TodoQuickFix" },

@@ -47,5 +47,7 @@ return {
 
     -- unmap
     ["<C-s>"] = false,
+    -- set CWD
+    ["<leader>."] = { "<cmd>cd %:p:h<cr>", desc = "Set CWD" },
   },
 }

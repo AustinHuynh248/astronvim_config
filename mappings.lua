@@ -1,19 +1,6 @@
 local astro_utils = require "astronvim.utils"
 return {
   n = {
-    -- better buffer navigation
-    ["]b"] = false,
-    ["[b"] = false,
-    ["<Tab>"] = {
-      function()
-        if #vim.t.bufs > 1 then
-          require("telescope.builtin").buffers { sort_mru = true, ignore_current_buffer = true }
-        else
-          astro_utils.notify "No other buffers open"
-        end
-      end,
-      desc = "Switch Buffers",
-    },
     -- mappings seen under group name "Buffer"
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {

@@ -1,8 +1,5 @@
 return {
   "nvim-telescope/telescope.nvim",
-  dependencies = {
-    "ahmedkhalf/project.nvim",
-  },
   opts = function(_, opts)
     local actions = require "telescope.actions"
     return require("astronvim.utils").extend_tbl(opts, {
@@ -46,9 +43,5 @@ return {
       },
     })
   end,
-  config = function(...)
-    require "plugins.configs.telescope"(...)
-    local telescope = require "telescope"
-    telescope.load_extension "projects"
-  end,
+  config = function(...) require "plugins.configs.telescope"(...) end,
 }

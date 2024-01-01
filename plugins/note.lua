@@ -11,28 +11,15 @@ return {
   },
   {
     "epwalsh/obsidian.nvim",
-    event = { "BufReadPre " .. vim.fn.expand "~" .. "/Documents/JT-Notes/*.md" },
-    keys = {
-      {
-        "gf",
-        function()
-          if require("obsidian").util.cursor_on_markdown_link() then
-            return "<cmd>ObsidianFollowLink<CR>"
-          else
-            return "gf"
-          end
-        end,
-        noremap = false,
-        expr = true,
-      },
-    },
+    event = { "BufReadPre " .. vim.fn.expand "~" .. "/Documents/JT-notes/*.md" },
+    cmd = { "ObsidianToday", "ObsidianYesterday", "ObsidianTommorrow" },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "hrsh7th/nvim-cmp",
       "nvim-telescope/telescope.nvim",
     },
     opts = {
-      dir = vim.env.HOME .. "/Documents/JT-Notes", -- specify the vault location. no need to call 'vim.fn.expand' here
+      dir = vim.env.HOME .. "/Documents/JT-notes", -- specify the vault location. no need to call 'vim.fn.expand' here
       use_advanced_uri = true,
       finder = "telescope.nvim",
       mappings = {},

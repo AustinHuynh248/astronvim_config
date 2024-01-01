@@ -40,5 +40,15 @@ return {
     ["<C-s>"] = false,
     -- set CWD
     ["<leader>."] = { "<cmd>cd %:p:h<cr>", desc = "Set CWD" },
+
+    --obsidian
+    ["<leader>o"] = { desc = " Notes" },
+    ["<leader>ot"] = { "<cmd>ObsidianToday<cr>", desc = "Daily Today" },
+    ["<leader>oy"] = { "<cmd>ObsidianYesterday<cr>", desc = "Daily Yesterday" },
+    ["<leader>on"] = { "<cmd>ObsidianTommorrow<cr>", desc = "Daily Tommorrow" },
+    ["<leader>op"] = { "<cmd>ObsidianPasteImg<cr>", desc = "Past Image" },
+    ["<leader>of"] = { "<cmd>ObsidianFollowLink<cr>", desc = "Follow Link" },
+    ["<leader>oc"] = { "<cmd>ObsidianQuickSwitch<cr>", desc = "Switch" },
+    ["<leader>oh"] = { "<cmd>ObsidianTemplate<cr>", desc = "Template Insert" },
   },
 }

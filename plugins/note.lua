@@ -20,8 +20,12 @@ return {
     },
     opts = {
       dir = vim.env.HOME .. "/Documents/JT-notes", -- specify the vault location. no need to call 'vim.fn.expand' here
+      notes_subdir = "fleeting",
       use_advanced_uri = true,
       finder = "telescope.nvim",
+      completion = {
+        new_notes_location = "fleeting",
+      },
       mappings = {},
 
       daily_notes = {

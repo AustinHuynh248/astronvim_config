@@ -12,7 +12,7 @@ return {
   {
     "epwalsh/obsidian.nvim",
     event = { "BufReadPre " .. vim.fn.expand "~" .. "/Documents/JT-notes/*.md" },
-    cmd = { "ObsidianToday", "ObsidianYesterday", "ObsidianTommorrow", "ObsidianNew" },
+    cmd = { "ObsidianToday", "ObsidianYesterday", "ObsidianTomorrow", "ObsidianNew" },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "hrsh7th/nvim-cmp",

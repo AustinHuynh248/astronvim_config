@@ -48,9 +48,20 @@ return {
     ["<leader>oy"] = { "<cmd>ObsidianYesterday<cr>", desc = "Daily notes yesterday" },
     ["<leader>ot"] = { "<cmd>ObsidianTomorrow<cr>", desc = "Daily notes tommorrow" },
     ["<leader>op"] = { "<cmd>ObsidianPasteImg<cr>", desc = "Paste image from clipboard" },
-    ["<leader>of"] = { "<cmd>ObsidianFollowLink<cr>", desc = "Follow link" },
     ["<leader>oc"] = { "<cmd>ObsidianQuickSwitch<cr>", desc = "Quick switch notes" },
-    ["<leader>oh"] = { "<cmd>ObsidianTemplate<cr>", desc = "Insert template" },
     ["<leader>on"] = { "<cmd>ObsidianNew<cr>", desc = "Create a new note" },
+    ["<leader>oh"] = { "<cmd>ObsidianTemplate<cr>", desc = "Insert template" },
+    ["<leader>oo"] = { "<cmd>ObsidianOpen<cr>", desc = "Open obsidian note" },
+    ["<leader>ob"] = { "<cmd>ObsidianBacklinks<cr>", desc = "Open list back links" },
+    ["<leader>of"] = { "<cmd>ObsidianSearch<cr>", desc = "Find in notes" },
+  },
+
+  -- visual mode
+  v = {
+    -- spectre
+    ["<leader>ss"] = { function() require("spectre").open_visual() end, desc = "Spectre" },
+    -- obsidian
+    ["<leader>on"] = { "<cmd>ObsidianLinkNew<cr>", desc = "Create a new note" },
+    ["<leader>ol"] = { "<cmd>ObsidianLink<cr>", desc = "Link to a visual selection of text" },
   },
 }

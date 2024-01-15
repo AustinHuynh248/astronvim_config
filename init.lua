@@ -55,17 +55,9 @@ return {
           root_dir = require("lspconfig.util").root_pattern "nginx.conf",
         }
       end,
-      tailwindcss = function()
-        return {
-          filetypes = {
-            "html",
-            "mdx",
-            "css",
-            "postcss",
-            "javascriptreact",
-            "typescriptreact",
-          },
-        }
+      tailwindcss = function(opts)
+        opts.root_dir = require("lspconfig.util").root_pattern("tailwind.config.ts", "tailwind.config.js")
+        return opts
       end,
     },
   },

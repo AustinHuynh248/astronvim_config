@@ -17,6 +17,7 @@ return {
       -- },
       require "typescript.extensions.null-ls.code-actions",
     }
+
     return config -- return final config table
   end,
 }

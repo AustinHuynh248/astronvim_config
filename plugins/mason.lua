@@ -33,6 +33,17 @@ return {
         "gofumpt",
         "goimports",
       },
+      handlers = {
+        stylelint = function()
+          require("null-ls").register(require("null-ls").builtins.diagnostics.stylelint.with {
+            condition = function(utils)
+              return utils.root_has_file ".stylelintrc.json"
+                or utils.root_has_file ".stylelintrc.js"
+                or utils.root_has_file ".stylelintrc.yml"
+            end,
+          })
+        end,
+      },
     },
   },
   {

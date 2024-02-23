@@ -16,7 +16,6 @@ return {
         "pyright",
         "eslint",
         "gopls",
-        "emmet_ls",
       },
     },
   },

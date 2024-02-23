@@ -32,6 +32,7 @@ return {
         "prettierd",
         "gofumpt",
         "goimports",
+        "codespell",
       },
       handlers = {
         stylelint = function()

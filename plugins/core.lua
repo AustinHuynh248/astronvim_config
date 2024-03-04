@@ -1,8 +1,4 @@
 return {
-  {
-    "goolord/alpha-nvim",
-    enabled = false,
-  },
   { "max397574/better-escape.nvim", enabled = false },
   { "mfussenegger/nvim-dap", dependencies = {
     { "theHamsta/nvim-dap-virtual-text", config = true },
@@ -16,9 +12,6 @@ return {
     cmd = { "DiffviewOpen" },
   },
   {
-    "rcarriga/nvim-notify",
-  },
-  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       filesystem = {
@@ -26,16 +19,6 @@ return {
         filtered_items = {
           always_show = { ".github", ".gitignore", ".env", ".env.development.local_preconfig", ".config" },
         },
-      },
-    },
-  },
-  {
-    "NvChad/nvim-colorizer.lua",
-    lazy = false,
-    opts = {
-      user_default_options = {
-        names = true,
-        tailwind = true, -- Enable tailwind colors
       },
     },
   },

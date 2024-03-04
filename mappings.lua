@@ -46,7 +46,7 @@ return {
     ["<leader>o"] = { false, desc = " Notes" },
     ["<leader>od"] = { "<cmd>ObsidianToday<cr>", desc = "Daily notes today" },
     ["<leader>oy"] = { "<cmd>ObsidianToday - 1<cr>", desc = "Daily notes yesterday" },
-    ["<leader>ot"] = { "<cmd>ObsidianToday + 1<cr>", desc = "Daily notes tommorrow" },
+    ["<leader>ot"] = { "<cmd>ObsidianToday + 1<cr>", desc = "Daily notes tomorrow" },
     ["<leader>op"] = { "<cmd>ObsidianPasteImg<cr>", desc = "Paste image from clipboard" },
     ["<leader>oc"] = { "<cmd>ObsidianQuickSwitch<cr>", desc = "Quick switch notes" },
     ["<leader>on"] = { "<cmd>ObsidianNew<cr>", desc = "Create a new note" },

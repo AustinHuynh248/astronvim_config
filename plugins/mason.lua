@@ -28,9 +28,7 @@ return {
         "stylua",
         "black",
         "isort",
-        "prettierd",
-        "gofumpt",
-        "goimports",
+        "prettier",
         "codespell",
       },
       handlers = {
